@@ -1,0 +1,95 @@
+{
+  "main": {
+    "id": "2e18105c45e0b441",
+    "type": "split",
+    "children": [
+      {
+        "id": "666f0ece39e82e3b",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Design_Partterns.md",
+            "mode": "preview",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "8e729401d55eb165",
+    "type": "split",
+    "children": [
+      {
+        "id": "cedb7bad421e6426",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d39e460e240236b3",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "52a687c269df8aed",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "right": {
+    "id": "4cd646c18155d058",
+    "type": "split",
+    "children": [
+      {
+        "id": "0db3b60c4e35be7e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "441c3872b4bff9f4",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Design_Partterns.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "666f0ece39e82e3b",
+  "lastOpenFiles": [
+    "Design_Partterns.md"
+  ]
+}
