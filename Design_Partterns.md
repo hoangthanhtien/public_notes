@@ -30,24 +30,18 @@ Có 3 nhóm chính:
 ### Creawtional Patterns
 #### Singleton
 1. **Singleton là gì?**
-Trong lập trình hướng đối tượng, đôi khi sẽ cần có một object chứa data có thể được truy xuất từ mọi nơi. Điều này có thể đạt được bằng cách sử dụng biến toàn cục, tuy nhiên nó sẽ vi phạm tinh đóng gói (Encapsulation) trong OOP. Đây chính là lúc cần ứng dụng **Singleton pattern**
+	Trong lập trình hướng đối tượng, đôi khi sẽ cần có một object chứa data có thể được truy xuất từ mọi nơi. Điều này có thể đạt được bằng cách sử dụng biến toàn cục, tuy nhiên nó sẽ vi phạm tinh đóng gói (Encapsulation) trong OOP. Đây chính là lúc cần ứng dụng **Singleton pattern**
+	
+	>- Đảm bảo rằng một class sẽ chỉ có duy nhất một instance
+	>- Cung cấp một điểm truy cập global tới instance đó
 
-2. Nguyên tắc khi Implement
-	1. **private constructor** để hạn chế truy cập từ bên ngoài
-	2. Đặt **private static final variable** đảm bảo biến chỉ được khởi tạo trong class
-	3. Có một method **public static** để trả về instance được khởi tạo ở trên
-3. Các cách implement
-	1. **Eager initialization** - Singleton Class được khởi tạo ngay khi được gọi đến
-		```java
-		public class EagerInitializedSingleton{
-			private static final EagerInitialiezedSingleton	INSTANCE = new EagerInitializedSingleton();
-			// Private constructor để tránh client applications sử dụng constructor 
-			private EagerInitializedSingleton(){
-			
-			}
-	
-			public static EagerInitializedSingleton getInstance(){
-	
-			}
-		}
-		```
+2. **Cách implement**
+	Có nhiều cách để implement nhưng sẽ tuân theo hai bước thông dụng:
+	- Đặt default constructor thành private, để ngăn các object khác sử dụng `new`  để tạo một instance khác của Singleton class
+	- Tạo một static creation method hoạt động như một constructor. Method này thực chất sẽ gọi private constructor để tạo một object rồi lưu nó vào trong một static field. Tất cả các lần call tới method này đều sẽ trả về object được cache đó
+3. Cấu trúc
+	![[Pasted image 20220403224205.png]]
+
+```python
+
+```
